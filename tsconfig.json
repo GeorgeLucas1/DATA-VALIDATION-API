@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    /* ── Ambiente ── */
+    "target": "ES2022",
+    "lib": ["ES2022"],
+
+    /* ── Módulos ── */
+    "module": "nodenext",
+    "moduleResolution": "node16",  // use apenas "node"
+
+    "resolveJsonModule": true,
+
+    /* ── Pastas ── */
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* ── Interop ── */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* ── Checagem de tipos ── */
+    "strict": true,
+    "skipLibCheck": true,
+
+    /* ── Tipos globais do Node ── */
+    "types": ["node"]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

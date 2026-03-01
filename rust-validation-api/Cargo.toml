@@ -1,0 +1,15 @@
+[package]
+name = "rust-validation-api"
+version = "0.1.0"
+edition = "2024"
+
+
+#configura a biblioteca e gera cdylib muda isso — ele gera um arquivo .so no Linux, .dylib no Mac ou .dll no Windows. É esse arquivo que o Node.js vai carregar via FFI. Sem essa linha, o Node.js não consegue usar a biblioteca.
+[lib]
+name = "validator"
+crate-type = ["cdylib"]
+
+#regex biblioteca pra validar os dados
+[dependencies]
+regex="1"
+lazy_static = "1.4"
